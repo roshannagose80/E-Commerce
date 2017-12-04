@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		CF275CE11FD327FB00A7209C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF275CE01FD327FB00A7209C /* AppDelegate.swift */; };
-		CF275CE31FD327FB00A7209C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF275CE21FD327FB00A7209C /* ViewController.swift */; };
 		CF275CE61FD327FB00A7209C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF275CE41FD327FB00A7209C /* Main.storyboard */; };
 		CF275CE91FD327FB00A7209C /* E_Commerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF275CE71FD327FB00A7209C /* E_Commerce.xcdatamodeld */; };
 		CF275CEB1FD327FB00A7209C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF275CEA1FD327FB00A7209C /* Assets.xcassets */; };
 		CF275CEE1FD327FB00A7209C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF275CEC1FD327FB00A7209C /* LaunchScreen.storyboard */; };
 		CF275CF91FD327FB00A7209C /* E_CommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF275CF81FD327FB00A7209C /* E_CommerceTests.swift */; };
 		CF275D041FD327FB00A7209C /* E_CommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF275D031FD327FB00A7209C /* E_CommerceUITests.swift */; };
+		CF275D1D1FD3293000A7209C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF275D1B1FD3293000A7209C /* ProductViewController.swift */; };
+		CF275D1E1FD3293000A7209C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF275D1C1FD3293000A7209C /* HomeViewController.swift */; };
+		CF275D251FD3297500A7209C /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CF275D221FD3297400A7209C /* HMSegmentedControl.m */; };
+		CF275D261FD3297500A7209C /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF275D241FD3297500A7209C /* SwipeView.m */; };
+		CF275D291FD329D000A7209C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF275D281FD329D000A7209C /* NetworkManager.swift */; };
+		CF883B261FD3D9F9001D97AA /* VariantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF883B241FD3D9F9001D97AA /* VariantsTableViewCell.swift */; };
+		CF883B271FD3D9F9001D97AA /* VariantsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF883B251FD3D9F9001D97AA /* VariantsTableViewCell.xib */; };
+		CF883B2A1FD3DB95001D97AA /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF883B281FD3DB95001D97AA /* ProductCollectionCell.swift */; };
+		CF883B2B1FD3DB95001D97AA /* ProductCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF883B291FD3DB95001D97AA /* ProductCollectionCell.xib */; };
+		CFD721E61FD41EBC009E00CA /* RankingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD721E51FD41EBC009E00CA /* RankingsViewController.swift */; };
+		CFD721E81FD42B95009E00CA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD721E71FD42B95009E00CA /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +47,6 @@
 /* Begin PBXFileReference section */
 		CF275CDD1FD327FB00A7209C /* E-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF275CE01FD327FB00A7209C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF275CE21FD327FB00A7209C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF275CE51FD327FB00A7209C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF275CE81FD327FB00A7209C /* E_Commerce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = E_Commerce.xcdatamodel; sourceTree = "<group>"; };
 		CF275CEA1FD327FB00A7209C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +58,20 @@
 		CF275CFF1FD327FB00A7209C /* E-CommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-CommerceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF275D031FD327FB00A7209C /* E_CommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_CommerceUITests.swift; sourceTree = "<group>"; };
 		CF275D051FD327FB00A7209C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF275D1B1FD3293000A7209C /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		CF275D1C1FD3293000A7209C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CF275D201FD3297300A7209C /* E-Commerce-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E-Commerce-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF275D211FD3297400A7209C /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		CF275D221FD3297400A7209C /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		CF275D231FD3297400A7209C /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		CF275D241FD3297500A7209C /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		CF275D281FD329D000A7209C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CF883B241FD3D9F9001D97AA /* VariantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantsTableViewCell.swift; sourceTree = "<group>"; };
+		CF883B251FD3D9F9001D97AA /* VariantsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VariantsTableViewCell.xib; sourceTree = "<group>"; };
+		CF883B281FD3DB95001D97AA /* ProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
+		CF883B291FD3DB95001D97AA /* ProductCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionCell.xib; sourceTree = "<group>"; };
+		CFD721E51FD41EBC009E00CA /* RankingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingsViewController.swift; sourceTree = "<group>"; };
+		CFD721E71FD42B95009E00CA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +122,11 @@
 		CF275CDF1FD327FB00A7209C /* E-Commerce */ = {
 			isa = PBXGroup;
 			children = (
+				CFD721E91FD4508A009E00CA /* Model */,
+				CF275D271FD329B300A7209C /* NetworkManager */,
+				CF275D1F1FD3295900A7209C /* Helper */,
+				CF275D1A1FD328E800A7209C /* Controllers */,
 				CF275CE01FD327FB00A7209C /* AppDelegate.swift */,
-				CF275CE21FD327FB00A7209C /* ViewController.swift */,
 				CF275CE41FD327FB00A7209C /* Main.storyboard */,
 				CF275CEA1FD327FB00A7209C /* Assets.xcassets */,
 				CF275CEC1FD327FB00A7209C /* LaunchScreen.storyboard */,
@@ -126,6 +152,56 @@
 				CF275D051FD327FB00A7209C /* Info.plist */,
 			);
 			path = "E-CommerceUITests";
+			sourceTree = "<group>";
+		};
+		CF275D1A1FD328E800A7209C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF883B1F1FD3D92C001D97AA /* Cells */,
+				CF275D1C1FD3293000A7209C /* HomeViewController.swift */,
+				CF275D1B1FD3293000A7209C /* ProductViewController.swift */,
+				CFD721E51FD41EBC009E00CA /* RankingsViewController.swift */,
+				CFD721E71FD42B95009E00CA /* MainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF275D1F1FD3295900A7209C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CF275D211FD3297400A7209C /* HMSegmentedControl.h */,
+				CF275D221FD3297400A7209C /* HMSegmentedControl.m */,
+				CF275D231FD3297400A7209C /* SwipeView.h */,
+				CF275D241FD3297500A7209C /* SwipeView.m */,
+				CF275D201FD3297300A7209C /* E-Commerce-Bridging-Header.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CF275D271FD329B300A7209C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				CF275D281FD329D000A7209C /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		CF883B1F1FD3D92C001D97AA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF883B241FD3D9F9001D97AA /* VariantsTableViewCell.swift */,
+				CF883B251FD3D9F9001D97AA /* VariantsTableViewCell.xib */,
+				CF883B281FD3DB95001D97AA /* ProductCollectionCell.swift */,
+				CF883B291FD3DB95001D97AA /* ProductCollectionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CFD721E91FD4508A009E00CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +272,7 @@
 				TargetAttributes = {
 					CF275CDC1FD327FB00A7209C = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					CF275CF31FD327FB00A7209C = {
@@ -236,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF275CEE1FD327FB00A7209C /* LaunchScreen.storyboard in Resources */,
+				CF883B271FD3D9F9001D97AA /* VariantsTableViewCell.xib in Resources */,
 				CF275CEB1FD327FB00A7209C /* Assets.xcassets in Resources */,
+				CF883B2B1FD3DB95001D97AA /* ProductCollectionCell.xib in Resources */,
 				CF275CE61FD327FB00A7209C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +341,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF275CE31FD327FB00A7209C /* ViewController.swift in Sources */,
+				CF275D1E1FD3293000A7209C /* HomeViewController.swift in Sources */,
+				CF883B261FD3D9F9001D97AA /* VariantsTableViewCell.swift in Sources */,
+				CFD721E81FD42B95009E00CA /* MainTabBarController.swift in Sources */,
+				CF883B2A1FD3DB95001D97AA /* ProductCollectionCell.swift in Sources */,
+				CF275D261FD3297500A7209C /* SwipeView.m in Sources */,
 				CF275CE11FD327FB00A7209C /* AppDelegate.swift in Sources */,
+				CF275D291FD329D000A7209C /* NetworkManager.swift in Sources */,
+				CF275D251FD3297500A7209C /* HMSegmentedControl.m in Sources */,
+				CFD721E61FD41EBC009E00CA /* RankingsViewController.swift in Sources */,
+				CF275D1D1FD3293000A7209C /* ProductViewController.swift in Sources */,
 				CF275CE91FD327FB00A7209C /* E_Commerce.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +517,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "E-Commerce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roshan.E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "E-Commerce/Helper/E-Commerce-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,11 +534,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "E-Commerce/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roshan.E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "E-Commerce/Helper/E-Commerce-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

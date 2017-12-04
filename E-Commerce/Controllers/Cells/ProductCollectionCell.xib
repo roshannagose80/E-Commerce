@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionCell" customModule="E_Commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hO9-Nq-SVP">
+                        <rect key="frame" x="8" y="8" width="140" height="124"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtx-gX-AHA">
+                                <rect key="frame" x="10" y="19" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bDI-y7-uNv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq5-LJ-HA3">
+                                <rect key="frame" x="10" y="52" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zvm-cs-eSt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnA-Cv-er9">
+                                <rect key="frame" x="10" y="86" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="q74-N6-e4h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rtx-gX-AHA" secondAttribute="trailing" constant="10" id="2By-Wm-4jM"/>
+                            <constraint firstAttribute="trailing" secondItem="XnA-Cv-er9" secondAttribute="trailing" constant="10" id="6VF-WP-hre"/>
+                            <constraint firstItem="rtx-gX-AHA" firstAttribute="top" secondItem="hO9-Nq-SVP" secondAttribute="top" constant="19" id="LCJ-Iq-Pgk"/>
+                            <constraint firstItem="rtx-gX-AHA" firstAttribute="leading" secondItem="hO9-Nq-SVP" secondAttribute="leading" constant="10" id="Oez-ah-4ca"/>
+                            <constraint firstItem="Xq5-LJ-HA3" firstAttribute="top" secondItem="rtx-gX-AHA" secondAttribute="bottom" constant="12" id="UKt-oZ-SCY"/>
+                            <constraint firstAttribute="bottom" secondItem="XnA-Cv-er9" secondAttribute="bottom" constant="17" id="YuP-FV-aVg"/>
+                            <constraint firstItem="XnA-Cv-er9" firstAttribute="top" secondItem="Xq5-LJ-HA3" secondAttribute="bottom" constant="13" id="dmK-mU-tpv"/>
+                            <constraint firstItem="XnA-Cv-er9" firstAttribute="leading" secondItem="hO9-Nq-SVP" secondAttribute="leading" constant="10" id="i3m-oc-nAe"/>
+                            <constraint firstAttribute="trailing" secondItem="Xq5-LJ-HA3" secondAttribute="trailing" constant="10" id="mvg-rH-sEe"/>
+                            <constraint firstItem="Xq5-LJ-HA3" firstAttribute="leading" secondItem="hO9-Nq-SVP" secondAttribute="leading" constant="10" id="rSZ-Dh-MeM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.8980392157" green="0.88235294119999996" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hO9-Nq-SVP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="BL5-La-NjB"/>
+                <constraint firstItem="hO9-Nq-SVP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="UlA-Do-L6N"/>
+                <constraint firstAttribute="trailing" secondItem="hO9-Nq-SVP" secondAttribute="trailing" constant="8" id="Zw4-bC-YLQ"/>
+                <constraint firstAttribute="bottom" secondItem="hO9-Nq-SVP" secondAttribute="bottom" constant="8" id="fvY-Ba-eXi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="mainContentView" destination="hO9-Nq-SVP" id="M6N-u5-bgQ"/>
+                <outlet property="productColorLabel" destination="rtx-gX-AHA" id="Ai4-ib-PkA"/>
+                <outlet property="productPriceLabel" destination="XnA-Cv-er9" id="peg-ce-83E"/>
+                <outlet property="productSizeLabel" destination="Xq5-LJ-HA3" id="elB-Of-9xc"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="47"/>
+        </collectionViewCell>
+    </objects>
+</document>

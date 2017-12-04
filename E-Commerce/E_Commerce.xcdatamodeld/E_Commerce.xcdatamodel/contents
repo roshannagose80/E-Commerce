@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="categoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="category" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
+        <attribute name="productId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="products" inverseEntity="Category" syncable="YES"/>
+        <relationship name="variants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Variant" inverseName="product" inverseEntity="Variant" syncable="YES"/>
+    </entity>
+    <entity name="RankedProduct" representedClassName="RankedProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="rankedCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rankedProductId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="ranking" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ranking" inverseName="rankProducts" inverseEntity="Ranking" syncable="YES"/>
+    </entity>
+    <entity name="Ranking" representedClassName="Ranking" syncable="YES" codeGenerationType="class">
+        <attribute name="rankingName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rankProducts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RankedProduct" inverseName="ranking" inverseEntity="RankedProduct" syncable="YES"/>
+    </entity>
+    <entity name="Variant" representedClassName="Variant" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="variantId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="variants" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-180" positionY="-234" width="128" height="88"/>
+        <element name="Product" positionX="88" positionY="-46" width="128" height="103"/>
+        <element name="Variant" positionX="43" positionY="-243" width="128" height="118"/>
+        <element name="Ranking" positionX="-360" positionY="9" width="128" height="73"/>
+        <element name="RankedProduct" positionX="-54" positionY="168" width="128" height="88"/>
+    </elements>
 </model>
